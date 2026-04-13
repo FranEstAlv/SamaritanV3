@@ -1465,9 +1465,9 @@ caption = (
     f"Referencias: {references_count}\n"
     f"Informes del grupo: <a href='https://t.me/olimpobinsrefes/4237'>Aquí</a></b></blockquote>"
     )
+
     try:
-        # Enviar imagen al canal
-        await context.bot.send_photo(
+       await context.bot.send_photo(
             chat_id=REFERENCES_CHANNEL_ID,
             photo=photo_file_id,
             caption=caption,
