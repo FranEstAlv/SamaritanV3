@@ -1472,7 +1472,7 @@ caption = (
             chat_id=REFERENCES_CHANNEL_ID,
             photo=photo_file_id,
             caption=caption,
-            parse_mode=ParseMode.HTML
+            parse_mode='HTML
         )
         
         await update.message.reply_text(
