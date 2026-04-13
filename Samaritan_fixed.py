@@ -1466,7 +1466,7 @@ caption = (
     f"Informes del grupo: <a href='https://t.me/olimpobinsrefes/4237'>Aquí</a></b></blockquote>"
     ) 
     
-        try:
+    try:
         await context.bot.send_photo(
             chat_id=REFERENCES_CHANNEL_ID,
             photo=photo_file_id,
