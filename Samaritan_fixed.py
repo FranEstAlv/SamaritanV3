@@ -1472,13 +1472,13 @@ async def refe_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             chat_id=REFERENCES_CHANNEL_ID,
             photo=photo_file_id,
             caption=caption,
-            parse_mode=Parse.HTML
+            parse_mode=ParseMode.HTML
         )
         
         await update.message.reply_text(
             f"✅ Referencia publicada exitosamente.\n"
             f"Total de referencias: {references_count}",
-            parse_mode=Parse.HTML
+            parse_mode=ParseMode.HTML
         )
         logger.info(f"Referencia publicada por {username} (ID: {user_id}). Total: {references_count}")
     except TelegramError as e:
