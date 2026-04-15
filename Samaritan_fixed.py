@@ -190,7 +190,7 @@ async def log_request(update: Update):
             """, (user_id, username, command, request_date, request_time, chat_type))
             conn.commit()
     except Exception as e:
-        logger.error(f"Error al registrar petición: {e}")}
+        logger.error(f"Error al registrar petición: {e}")
 
 def register_user(tg_id: int, username: str):
     with sqlite3.connect(DB_PATH) as conn:
