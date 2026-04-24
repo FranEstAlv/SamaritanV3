@@ -11,6 +11,7 @@ import csv
 import io
 from datetime import datetime, timedelta, time, timezone
 from zoneinfo import ZoneInfo
+from extra_command_module import setup_extra_handlers
 
 try:
     from dotenv import load_dotenv
@@ -2281,7 +2282,9 @@ async def show_blacklist_detail(update: Update, context: ContextTypes.DEFAULT_TY
     # Comando /listar - Menú paginado de lista negra
     app.add_handler(CommandHandler("listar", listar_command))
     app.add_handler(CallbackQueryHandler(blacklist_callback_handler, pattern=r"^blacklist_"))
-    
+
+     # Comando /extra - Generador de BINs
+    setup_extra_handlers(app)
 
     logger.info("El Buen Samaritano (v32) está listo y en funcionamiento.")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
