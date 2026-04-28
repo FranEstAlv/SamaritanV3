@@ -723,11 +723,11 @@ async def info_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def web_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Envía el enlace de la web."""
-    await update.message.reply_text("https://chk.leviatan-chk.com/")
+    await update.message.reply_text("https://www.onlyfans.com/")
 
 async def bot_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Envía el enlace del propio bot."""
-    await update.message.reply_text("@LevitanChk_bot")
+    await update.message.reply_text("@HadesV1bot")
 
 async def staff_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Muestra la lista de staff del Olimpo con formato de blockquote."""
