@@ -11,6 +11,7 @@ import csv
 import io
 from datetime import datetime, timedelta, time, timezone
 from zoneinfo import ZoneInfo
+from typing import Optional, Tuple
 
 try:
     from dotenv import load_dotenv
