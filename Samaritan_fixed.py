@@ -2736,7 +2736,7 @@ async def stickers_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Envía el enlace de stickers oficiales del grupo."""
     await update.message.reply_text(Stickers oficiales del grupo.)
 
-https://t.me/addstickers/OLIMPOBINSst")
+https://t.me/addstickers/OLIMPOBINSst)
 
 async def bot_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Envía el enlace del propio bot."""
